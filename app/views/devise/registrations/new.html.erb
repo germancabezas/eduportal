@@ -25,6 +25,11 @@
           </div>
 
           <div class="field form-group">
+            <%= f.label :Role %><br />
+            <%= f.select :user_role, ['Teacher', 'Student']%>
+          </div>
+
+          <div class="field form-group">
             <%= f.label :password %>
             <% if @minimum_password_length %>
             <em>(<%= @minimum_password_length %> characters minimum)</em>
