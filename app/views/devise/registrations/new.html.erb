@@ -26,7 +26,7 @@
 
           <div class="field form-group">
             <%= f.label :Role %><br />
-            <%= f.select :user_role, ['Teacher', 'Student']%>
+            <%= f.select :user_role, options_for_select(['Teacher', 'Student']), {}, class: "form-control" %>
           </div>
 
           <div class="field form-group">
