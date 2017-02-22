@@ -4,4 +4,7 @@ class UsersController < ApplicationController
     @users = User.all
     respond_with(@users)
   end
+  def show
+    @user = User.find(params[:id])
+  end
 end
